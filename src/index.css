@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  background:#050505;
+
+  color:white;
+
+  font-family:'Cormorant Garamond', serif;
+
+  overflow-x:hidden;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+button{
+  font-family:inherit;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+ul{
+  list-style:none;
+}
+button{
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.15);
+
+    transition:.6s;
+}
+
+button:hover::before{
+
+    left:100%;
+}
+.back-to-top{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#c49b63;
+
+    color:black;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    z-index:999;
+
+    transition:.3s;
+}
+
+.back-to-top:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(196,155,99,.4);
+}
+.top-bar{
+
+    height:40px;
+
+    background:#c49b63;
+
+    color:black;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+}

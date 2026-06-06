@@ -1,0 +1,39 @@
+.features{
+
+    width:90%;
+
+    margin:120px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+}
+
+.feature{
+
+    background:#111;
+
+    border:1px solid #222;
+
+    padding:40px;
+
+    text-align:center;
+}
+
+.feature h3{
+
+    color:#c49b63;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+}
+
+.feature p{
+
+    color:#ccc;
+
+    line-height:28px;
+}

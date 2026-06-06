@@ -1,0 +1,46 @@
+.stats{
+
+    width:90%;
+
+    margin:120px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+}
+
+.stat-box{
+
+    background:#0d0d0d;
+
+    border:1px solid #1b1b1b;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    transition:.4s;
+}
+
+.stat-box:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#c49b63;
+}
+
+.stat-box h2{
+
+    color:#c49b63;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+}
+
+.stat-box p{
+
+    color:#ccc;
+}
