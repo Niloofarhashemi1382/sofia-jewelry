@@ -1,6 +1,6 @@
 import "./styles/Responsive.css";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,7 +13,7 @@ import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="top-bar">
         FREE WORLDWIDE SHIPPING ON ALL ORDERS
       </div>
@@ -29,7 +29,7 @@ function App() {
 
       <Footer />
       <BackToTop />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
